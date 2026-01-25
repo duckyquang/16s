@@ -20,7 +20,8 @@ waitlistForm.addEventListener('submit', async (e) => {
     
     // Google Sheets API call via Google Apps Script
     // Use hidden iframe approach to avoid CORS issues
-    const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycby-Cj7BuLZhAh7KH_vW4Bz6I9p-CQuc2cbN5nEzDqwKQcuGY6XBVK5A1yPbffoIPwdKDw/exec';
+    // URL is obfuscated for security
+    const GOOGLE_SCRIPT_URL = atob('aHR0cHM6Ly9zY3JpcHQuZ29vZ2xlLmNvbS9tYWNyb3Mvcy9BS2Z5Y2J5LUNqN0J1TFpoQWg3S0hfdlc0Qno2STlwLUNRdWMyY2JONW5FekRxd0tRY3VHWTZYQlZLNUExeVBiZmZvSVB3ZEtEdy9leGVj');
     
     // Create a hidden form and iframe to submit data
     const iframe = document.createElement('iframe');
